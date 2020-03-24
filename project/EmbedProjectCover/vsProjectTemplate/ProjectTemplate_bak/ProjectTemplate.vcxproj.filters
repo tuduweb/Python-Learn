@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="c">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="h">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\Directory1">
+      <UniqueIdentifier>{6042010c-0434-45b4-b78f-10359ae95d58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="h\Directory2">
+      <UniqueIdentifier>{8b60a2b3-7cea-47be-9001-93364717aff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="h\HeaderDirectory1">
+      <UniqueIdentifier>{4cd0d27b-5467-4c41-86ab-509d08fa1ebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="h\HeaderDirectory3">
+      <UniqueIdentifier>{4cd0d27b-5467-4c41-86ab-509d08fa1ebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="board" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header1.h">
+      <Filter>h\HeaderDirectory1</Filter>
+    </ClInclude>
+    <ClInclude Include="header2.h">
+      <Filter>h\HeaderDirectory1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\header1.h">
+      <Filter>board</Filter>
+    </ClInclude>
+    <ClInclude Include="2.h">
+      <Filter>h\HeaderDirectory1</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="file1.cpp">
+      <Filter>c\Directory1</Filter>
+    </ClCompile>
+    <ClCompile Include="file2.cpp">
+      <Filter>c\Directory1</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="1.txt">
+      <Filter>board</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="startup_MIMXRT1052.s">
+      <Filter>board</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="appnotify.lib">
+      <Filter>board</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
