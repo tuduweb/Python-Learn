@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|ARM">
-      <Configuration>Debug</Configuration>
-      <Platform>ARM</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release 222|ARM">
-      <Configuration>Release 222</Configuration>
-      <Platform>ARM</Platform>
-    </ProjectConfiguration>  
-  </ItemGroup>
-  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <PlatformToolset>v142</PlatformToolset>
-    <ConfigurationType>Makefile</ConfigurationType>
-  </PropertyGroup>
-  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release 222|ARM'">
-    <PlatformToolset>v142</PlatformToolset>
-    <ConfigurationType>Makefile</ConfigurationType>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <NMakePreprocessorDefinitions>__ICCARM__;CPU_MIMXRT1052DVL6B;DEBUG;PRINTF_FLOAT_ENABLE=0</NMakePreprocessorDefinitions>
-    <NMakeIncludeSearchPath>D:\Keil_v5\ARM\ARMCLANG\include;F:\biyesheji\software\RT1052Pro\Libraries\imxrt1052_Lib\drivers\;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 222|ARM'">
-    <NMakePreprocessorDefinitions>__ICCARM__;CPU_MIMXRT1052DVL6B;NDEBUG;PRINTF_FLOAT_ENABLE=0</NMakePreprocessorDefinitions>
-    <NMakeIncludeSearchPath>D:\Keil_v5\ARM\ARMCLANG\include;F:\biyesheji\software\RT1052Pro\Libraries\imxrt1052_Lib\drivers\;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
-  </PropertyGroup>
 
-  <ItemGroup>
-    <ClInclude Include="h.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="cpp.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{2EF98A7B-5919-42A5-A62A-ED35C724260A}</ProjectGuid>

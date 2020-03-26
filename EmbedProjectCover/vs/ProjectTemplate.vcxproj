@@ -1,0 +1,242 @@
+<Project DefaultTargets="Build">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="hello_world ram_0x1400_debug|ARM">
+      <Configuration>hello_world ram_0x1400_debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="norflash|ARM">
+      <Configuration>norflash</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='norflash|ARM'">
+    <NMakePreprocessorDefinitions>__CC_ARM;DEBUG;CPU_MIMXRT1052DVL6B;PRINTF_FLOAT_ENABLE=0;SCANF_FLOAT_ENABLE=0;PRINTF_ADVANCED_ENABLE=0;SCANF_ADVANCED_ENABLE=0;SERIAL_PORT_TYPE_UART=1</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>D:\Keil_v5\ARM\ARMCC\include;D:\Keil_v5\ARM\ARMCLANG\include;..;..\..\Libraries\imxrt1052_Lib\CMSIS\Include;..\..\Libraries\imxrt1052_Lib\devices\;..\..\Libraries\imxrt1052_Lib\devices\drivers;..\..\Libraries\imxrt1052_Lib\utilities\str;..\..\Libraries\imxrt1052_Lib\utilities\debug_console;..\..\Libraries\imxrt1052_Lib\components\uart;..\..\Libraries\imxrt1052_Lib\components\serial_manager;..\..\Libraries\imxrt1052_Lib\components\lists;..\..\Libraries\imxrt1052_Lib\drivers;..\..\Libraries\imxrt1052_Lib\utilities;..\..\Libraries\imxrt1052_Lib\xip</NMakeIncludeSearchPath>
+    <IncludePath>D:\Keil_v5\ARM\ARMCLANG\include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='norflash|ARM'">
+    <PlatformToolset>v142</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='hello_world ram_0x1400_debug|ARM'">
+    <NMakePreprocessorDefinitions>__CC_ARM;DEBUG;CPU_MIMXRT1052DVL6B;PRINTF_FLOAT_ENABLE=0;SCANF_FLOAT_ENABLE=0;PRINTF_ADVANCED_ENABLE=0;SCANF_ADVANCED_ENABLE=0;SERIAL_PORT_TYPE_UART=1</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>D:\Keil_v5\ARM\ARMCC\include;D:\Keil_v5\ARM\ARMCLANG\include;..;..\..\Libraries\imxrt1052_Lib\CMSIS\Include;..\..\Libraries\imxrt1052_Lib\devices\;..\..\Libraries\imxrt1052_Lib\devices\drivers;..\..\Libraries\imxrt1052_Lib\utilities\str;..\..\Libraries\imxrt1052_Lib\utilities\debug_console;..\..\Libraries\imxrt1052_Lib\components\uart;..\..\Libraries\imxrt1052_Lib\components\serial_manager;..\..\Libraries\imxrt1052_Lib\components\lists;..\..\Libraries\imxrt1052_Lib\drivers;..\..\Libraries\imxrt1052_Lib\utilities;..\..\Libraries\imxrt1052_Lib\xip;..\..\Libraries\RT10xx_HAL_Driver\;..\..\Libraries\RT10xx_HAL_Driver\Inc;..\..\Libraries\BIN_Peripheral;..\..\Project\Application</NMakeIncludeSearchPath>
+    <IncludePath>D:\Keil_v5\ARM\ARMCLANG\include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='hello_world ram_0x1400_debug|ARM'">
+    <PlatformToolset>v142</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{2EF98A7B-5919-42A5-A62A-ED35C724260A}</ProjectGuid>
+    <RootNamespace>ProjectTemplate</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\Libraries\imxrt1052_Lib\startup\keil\startup_MIMXRT1052.s" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Text Include="..\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Libraries\bin_peripheral\BIN_LED.c" />
+    <ClCompile Include="..\..\Libraries\bin_peripheral\BIN_MT9V034.c" />
+    <ClCompile Include="..\..\Libraries\RT10xx_HAL_Driver\rt10xx_hal_iic.c" />
+    <ClCompile Include="..\..\Libraries\RT10xx_HAL_Driver\rt10xx_hal_iomuxc.c" />
+    <ClCompile Include="..\Application\PixelMaster.c" />
+    <ClCompile Include="..\Application\system.c" />
+    <ClCompile Include="..\Application\TeslaMaster.c" />
+    <ClCompile Include="..\hello_world.c" />
+    <ClCompile Include="..\pin_mux.c" />
+    <ClCompile Include="..\board.c" />
+    <ClCompile Include="..\clock_config.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_clock.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_common.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_lpuart.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_gpio.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_adc.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_adc_etc.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_aipstz.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_aoi.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_bee.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_cache.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_cmp.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_csi.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_dcdc.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_dcp.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_dmamux.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_edma.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_elcdif.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_enc.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_enet.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_ewm.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexcan.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_camera.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_camera_edma.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_i2c_master.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_i2s.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_i2s_edma.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_mculcd.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_mculcd_edma.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_spi.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_spi_edma.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_uart.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_uart_edma.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexram.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexram_allocate.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexspi.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_gpc.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_gpt.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_kpp.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_lpi2c.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_lpi2c_edma.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_lpspi.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_lpspi_edma.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_lpuart_edma.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_ocotp.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_pit.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_pmu.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_pwm.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_pxp.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_qtmr.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_rtwdog.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_sai.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_sai_edma.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_semc.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_snvs_hp.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_snvs_lp.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_spdif.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_spdif_edma.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_src.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_tempmon.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_trng.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_tsc.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_usdhc.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_wdog.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_xbara.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_xbarb.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\devices\system_MIMXRT1052.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\utilities\debug_console\fsl_debug_console.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\utilities\str\fsl_str.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\utilities\fsl_assert.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\components\uart\lpuart_adapter.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\components\serial_manager\serial_manager.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\components\serial_manager\serial_port_uart.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\components\lists\generic_list.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\xip\fsl_flexspi_nor_boot.c" />
+    <ClCompile Include="..\..\Libraries\imxrt1052_Lib\xip\xip_config.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Libraries\BIN_Peripheral\BIN_CAMERA.h" />
+    <ClInclude Include="..\..\Libraries\bin_peripheral\BIN_LED.h" />
+    <ClInclude Include="..\..\Libraries\bin_peripheral\BIN_MT9V034.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\CMSIS\Include\cmsis_armcc.h" />
+    <ClInclude Include="..\..\Libraries\RT10xx_HAL_Driver\Inc\common.h" />
+    <ClInclude Include="..\..\Libraries\RT10xx_HAL_Driver\Inc\hal_port.h" />
+    <ClInclude Include="..\..\Libraries\RT10xx_HAL_Driver\Inc\MIMXRT10xx.h" />
+    <ClInclude Include="..\..\Libraries\RT10xx_HAL_Driver\rt10xx_hal_iic.h" />
+    <ClInclude Include="..\..\Libraries\RT10xx_HAL_Driver\rt10xx_hal_iomuxc.h" />
+    <ClInclude Include="..\Application\PixelMaster.h" />
+    <ClInclude Include="..\Application\system.h" />
+    <ClInclude Include="..\Application\TeslaMaster.h" />
+    <ClInclude Include="..\pin_mux.h" />
+    <ClInclude Include="..\board.h" />
+    <ClInclude Include="..\clock_config.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_clock.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_common.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_lpuart.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_iomuxc.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_gpio.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_adc.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_adc_etc.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_aipstz.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_aoi.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_bee.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_cache.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_cmp.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_csi.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_dcdc.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_dcp.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_dmamux.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_edma.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_elcdif.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_enc.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_enet.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_ewm.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexcan.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_camera.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_camera_edma.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_i2c_master.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_i2s.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_i2s_edma.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_mculcd.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_mculcd_edma.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_spi.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_spi_edma.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_uart.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexio_uart_edma.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexram.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexram_allocate.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_flexspi.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_gpc.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_gpt.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_kpp.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_lpi2c.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_lpi2c_edma.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_lpspi.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_lpspi_edma.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_lpuart_edma.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_ocotp.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_pit.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_pmu.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_pwm.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_pxp.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_qtmr.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_rtwdog.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_sai.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_sai_edma.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_semc.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_snvs_hp.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_snvs_lp.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_spdif.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_spdif_edma.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_src.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_tempmon.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_trng.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_tsc.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_usdhc.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_wdog.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_xbara.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\drivers\fsl_xbarb.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\devices\MIMXRT1052.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\devices\MIMXRT1052_features.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\devices\fsl_device_registers.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\devices\system_MIMXRT1052.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\utilities\debug_console\fsl_debug_console.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\utilities\debug_console\fsl_debug_console_conf.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\utilities\str\fsl_str.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\components\uart\uart.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\components\serial_manager\serial_manager.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\components\serial_manager\serial_port_internal.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\components\serial_manager\serial_port_uart.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\components\lists\generic_list.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\xip\fsl_flexspi_nor_boot.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\CMSIS\Include\core_cm7.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\CMSIS\Include\cmsis_compiler.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\CMSIS\Include\cmsis_version.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\CMSIS\Include\mpu_armv7.h" />
+    <ClInclude Include="..\..\Libraries\imxrt1052_Lib\CMSIS\Include\cmsis_armclang.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
