@@ -9,9 +9,13 @@ from itemadapter import ItemAdapter
 
 
 class DoubanPipeline:
-    def __init__(self, mongo_uri, mongo_db)
-        self.mongo_uri = mongo_uri
-        self.mongo_db = mongo_db
-        self.col = 'some'
+#    def __init__(self, mongo_uri, mongo_db)
+#        self.mongo_uri = mongo_uri
+#        self.mongo_db = mongo_db
+#        self.col = 'some'
+    def process_item(self, item, spider):
+        return item
+
+class CommentPipeline:
     def process_item(self, item, spider):
         return item

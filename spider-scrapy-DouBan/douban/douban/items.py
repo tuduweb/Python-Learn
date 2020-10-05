@@ -15,3 +15,14 @@ class DoubanItem(scrapy.Item):
     star = scrapy.Field()
     evaluate = scrapy.Field()
     describe = scrapy.Field()
+
+class CommentItem(scrapy.Item):
+    comment_id = scrapy.Field()
+    user_key = scrapy.Field()
+
+    title = scrapy.Field()
+    content = scrapy.Field()
+
+    count_useful = scrapy.Field()
+    count_useless = scrapy.Field()
+    last_time = scrapy.Field()

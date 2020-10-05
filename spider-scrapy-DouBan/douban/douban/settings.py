@@ -64,6 +64,7 @@ DOWNLOAD_DELAY = 0.5
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'douban.pipelines.DoubanPipeline': 300,
+    'douban.pipelines.CommentPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
