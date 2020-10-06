@@ -9,6 +9,7 @@ import scrapy
 class DoubanItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    _id = scrapy.Field()
     serial_number = scrapy.Field()
     movie_name = scrapy.Field()
     introduce = scrapy.Field()
@@ -16,7 +17,12 @@ class DoubanItem(scrapy.Item):
     evaluate = scrapy.Field()
     describe = scrapy.Field()
 
+    movie_id = scrapy.Field()
+
 class CommentItem(scrapy.Item):
+    _id = scrapy.Field()
+
+    movie_id = scrapy.Field()
     comment_id = scrapy.Field()
     user_key = scrapy.Field()
 

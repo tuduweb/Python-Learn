@@ -7,10 +7,11 @@ myclient = pymongo.MongoClient("mongodb://192.168.110.130:27017/")
 db = myclient["tuduweb"]
 collection = db["loginDB"]
 
-post = {"author": "Mike",
+post = {"author": "Kid",
         "text": "My first blog post!",
         "tags": ["mongodb", "python", "pymongo"],
-        "date": datetime.datetime.utcnow()}
+        "date": datetime.datetime.utcnow(),
+        'error': 1}
 
 post_id = collection.insert_one(post).inserted_id
 
