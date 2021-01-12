@@ -68,6 +68,7 @@ ITEM_PIPELINES = {
    'AutoSpider.pipelines.MyFilesPipeline': 301,#先在autospider中筛选数据再download
 }
 FILES_STORE = 'M:/class_data/'
+DOWNLOAD_WARNSIZE = 0
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True

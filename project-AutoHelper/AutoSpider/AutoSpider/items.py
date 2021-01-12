@@ -14,5 +14,7 @@ class AutospiderItem(scrapy.Item):
     owner = scrapy.Field()
     attachments = scrapy.Field()
     file_urls = scrapy.Field()
-
+    json_data = scrapy.Field()
+    updated_time = scrapy.Field()
+    post_id = scrapy.Field()
     pass
