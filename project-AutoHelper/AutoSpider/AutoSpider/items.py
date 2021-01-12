@@ -9,4 +9,10 @@ import scrapy
 class AutospiderItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    title = scrapy.Field()
+    description = scrapy.Field()
+    owner = scrapy.Field()
+    attachments = scrapy.Field()
+    file_urls = scrapy.Field()
+
     pass
