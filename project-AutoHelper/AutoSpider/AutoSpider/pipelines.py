@@ -65,6 +65,27 @@ class AutospiderPipeline:
         return item
 
 
+class TopicPipeline:
+    download_path = 'M:/default_download/'
+
+    def __init__(self, download_path):
+        self.download_path = download_path
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(
+            download_path=crawler.settings.get("FILES_STORE")
+        )
+
+    def process_item(self, item, spider):
+        adapter = ItemAdapter(item)
+        return item
+
+class CommentPipeline:
+    pass
+
+
+
 import os
 from urllib.parse import urlparse
 

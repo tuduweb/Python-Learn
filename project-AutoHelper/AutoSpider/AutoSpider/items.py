@@ -18,3 +18,25 @@ class AutospiderItem(scrapy.Item):
     updated_time = scrapy.Field()
     post_id = scrapy.Field()
     pass
+
+
+class TopicItem(scrapy.Item):
+    product_id = scrapy.Field()
+    topic_id = scrapy.Field()
+
+    title = scrapy.Field()
+    content = scrapy.Field()
+    owner_id = scrapy.Field()
+    created_at = scrapy.Field()
+
+
+class CommentItem(scrapy.Item):
+    topic_id = scrapy.Field()
+    parent_id = scrapy.Field()
+    comment_id = scrapy.Field()
+
+    content = scrapy.Field()
+    owner_id = scrapy.Field()
+    created_at = scrapy.Field()
+
+    receiver = scrapy.Field()
