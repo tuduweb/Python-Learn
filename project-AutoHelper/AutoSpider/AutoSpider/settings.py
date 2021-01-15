@@ -91,3 +91,7 @@ DOWNLOAD_WARNSIZE = 0
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
+# MONGODB
+MONGO_URL = '172.16.79.136'
+MONGO_PORT = 27017
+MONGO_DB = 'tuduweb'
