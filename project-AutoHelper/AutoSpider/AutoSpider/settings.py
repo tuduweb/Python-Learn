@@ -64,8 +64,9 @@ ROBOTSTXT_OBEY = True
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    #'scrapy.pipelines.files.FilePipeline':1,
-   'AutoSpider.pipelines.AutospiderPipeline': 300,
-   'AutoSpider.pipelines.MyFilesPipeline': 301,#先在autospider中筛选数据再download
+   # 'AutoSpider.pipelines.AutospiderPipeline': 300,
+   # 'AutoSpider.pipelines.MyFilesPipeline': 301,#先在autospider中筛选数据再download
+   # 'AutoSpider.pipelines.TopicPipeline' : 300,
 }
 FILES_STORE = 'M:/class_data/'
 DOWNLOAD_WARNSIZE = 0
