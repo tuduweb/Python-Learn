@@ -138,8 +138,20 @@ class CommentsPipeline:
                 print("Comment %d exist!" % item['comment_id'])
         return item
 
-class CommentPipeline:
-    pass
+from AutoSpider.items import UserItem
+class UserPipeline:
+    def __init__(self, mongourl, mongoport, mongodb):
+        self.mongo_uri = mongourl
+        self.mongo_port = mongoport
+        self.mongo_db = mongodb
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(
+            mongourl=crawler.settings.get("MONGO_URL"),
+            mongoport=crawler.settings.get("MONGO_PORT"),
+            mongodb=crawler.settings.get("MONGO_DB")
+        )
 
     def open_spider(self, spider):
         self.client = pymongo.MongoClient(self.mongo_uri, self.mongo_port)
