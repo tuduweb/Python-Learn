@@ -9,20 +9,34 @@ import json
 
 import scrapy
 from itemadapter import ItemAdapter
+from AutoSpider.items import AutospiderItem
 
 
 class AutospiderPipeline:
     current_file_num = 0
     download_path = 'M:/default_download/'
 
-    def __init__(self, download_path):
+    def __init__(self, download_path, mongourl, mongoport, mongodb):
         self.download_path = download_path
+        self.mongo_uri = mongourl
+        self.mongo_port = mongoport
+        self.mongo_db = mongodb
 
     @classmethod
     def from_crawler(cls, crawler):
         return cls(
-            download_path=crawler.settings.get("FILES_STORE")
+            download_path=crawler.settings.get("FILES_STORE"),
+            mongourl=crawler.settings.get("MONGO_URL"),
+            mongoport=crawler.settings.get("MONGO_PORT"),
+            mongodb=crawler.settings.get("MONGO_DB")
         )
+
+    def open_spider(self, spider):
+        self.client = pymongo.MongoClient(self.mongo_uri, self.mongo_port)
+        self.db = self.client[self.mongo_db]
+
+    def close_spider(self, spider):
+        self.client.close()
 
     def process_item(self, item, spider):
         adapter = ItemAdapter(item)
@@ -61,6 +75,22 @@ class AutospiderPipeline:
             with open('%s/info.json' % path, 'a') as f:
                 f.write(json_data)
                 f.close()
+
+            # insert into database
+            if isinstance(item, AutospiderItem):
+                #TODO: 用for方法循环改动
+                if self.db['lhub_attachment'].find({'post_id': item['post_id']}).count() == 0:
+                    record_id = self.db['lhub_attachment'].insert_one({
+                        'post_id': adapter.get('post_id'),
+                        'title': adapter.get('title'),
+                        'description': adapter.get('description'),
+                        'owner_id': adapter.get('owner_id'),
+                        'attachments': adapter.get('attachments'),
+                        'updated_time': adapter.get('updated_time'),
+                    }).inserted_id
+                    print("Attachment %d insert %s!" % (item['post_id'], record_id))
+                else:
+                    print("Attachment %d exist!" % item['post_id'])
 
         return item
 
