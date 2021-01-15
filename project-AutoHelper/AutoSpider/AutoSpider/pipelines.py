@@ -95,20 +95,47 @@ class AutospiderPipeline:
         return item
 
 
-class TopicPipeline:
-    download_path = 'M:/default_download/'
+import pymongo
+from AutoSpider.items import TopicItem
+from AutoSpider.items import CommentItem
+class CommentsPipeline:
+    # download_path = 'M:/default_download/'
 
-    def __init__(self, download_path):
-        self.download_path = download_path
+    def __init__(self, mongourl, mongoport, mongodb):
+        self.mongo_uri = mongourl
+        self.mongo_port = mongoport
+        self.mongo_db = mongodb
 
     @classmethod
     def from_crawler(cls, crawler):
         return cls(
-            download_path=crawler.settings.get("FILES_STORE")
+            mongourl=crawler.settings.get("MONGO_URL"),
+            mongoport=crawler.settings.get("MONGO_PORT"),
+            mongodb=crawler.settings.get("MONGO_DB")
         )
 
+    def open_spider(self, spider):
+        self.client = pymongo.MongoClient(self.mongo_uri, self.mongo_port)
+        self.db = self.client[self.mongo_db]
+
+    def close_spider(self, spider):
+        self.client.close()
+
     def process_item(self, item, spider):
+        print('Topic Pipeline')
         adapter = ItemAdapter(item)
+        if isinstance(item, TopicItem):
+            if self.db['lhub_topic'].find({'topic_id': item['topic_id']}).count() == 0:
+                record_id = self.db['lhub_topic'].insert_one(item).inserted_id
+                print("Topic %d insert %s!" % (item['topic_id'], record_id))
+            else:
+                print("Topic %d exist!" % item['topic_id'])
+        elif isinstance(item, CommentItem):
+            if self.db['lhub_comment'].find({'comment_id': item['comment_id']}).count() == 0:
+                record_id = self.db['lhub_comment'].insert_one(item).inserted_id
+                print("Comment %d insert %s!" % (item['comment_id'], record_id))
+            else:
+                print("Comment %d exist!" % item['comment_id'])
         return item
 
 class CommentPipeline:
