@@ -84,7 +84,20 @@ class TopicPipeline:
 class CommentPipeline:
     pass
 
+    def open_spider(self, spider):
+        self.client = pymongo.MongoClient(self.mongo_uri, self.mongo_port)
+        self.db = self.client[self.mongo_db]
 
+    def close_spider(self, spider):
+        self.client.close()
+
+    def process_item(self, item, spider):
+        if isinstance(item, UserItem):
+            if self.db['lhub_user'].find({'user_id': item['user_id']}).count() == 0:
+                record_id = self.db['lhub_user'].insert_one(item).inserted_id
+                print("User %d insert %s!" % (item['user_id'], record_id))
+            else:
+                print("User %d exist!" % item['user_id'])
 
 import os
 from urllib.parse import urlparse
