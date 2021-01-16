@@ -10,6 +10,7 @@ import json
 import scrapy
 from itemadapter import ItemAdapter
 from AutoSpider.items import AutospiderItem
+from scrapy.exceptions import DropItem
 
 
 class AutospiderPipeline:
@@ -61,21 +62,6 @@ class AutospiderPipeline:
                 self.current_file_num += 1
                 pass
 
-            #self.download_path
-            path = os.path.join(self.download_path, str(adapter.get('post_id')))
-            if os.path.exists(path) is False:
-                os.makedirs(path)
-
-            print(path)
-            with open('%s/info.txt' % path, 'a') as f:
-                f.write(str(adapter.get('json_data')))
-                f.close()
-            json_data = json.dumps(adapter.get('json_data'))
-
-            with open('%s/info.json' % path, 'a') as f:
-                f.write(json_data)
-                f.close()
-
             # insert into database
             if isinstance(item, AutospiderItem):
                 #TODO: 用for方法循环改动
@@ -89,10 +75,30 @@ class AutospiderPipeline:
                         'updated_time': adapter.get('updated_time'),
                     }).inserted_id
                     print("Attachment %d insert %s!" % (item['post_id'], record_id))
+
+                    # self.download_path
+                    path = os.path.join(self.download_path, str(adapter.get('post_id')))
+                    if os.path.exists(path) is False:
+                        os.makedirs(path)
+
+                    print(path)
+                    with open('%s/info.txt' % path, 'a') as f:
+                        f.write(str(adapter.get('json_data')))
+                        f.close()
+                    json_data = json.dumps(adapter.get('json_data'))
+
+                    with open('%s/info.json' % path, 'a') as f:
+                        f.write(json_data)
+                        f.close()
+
+
+                    return item
                 else:
                     print("Attachment %d exist!" % item['post_id'])
-
-        return item
+                    raise DropItem('Attachment exist!')
+            else:
+                return item
+        return None
 
 
 import pymongo
@@ -167,12 +173,12 @@ class UserPipeline:
                 print("User %d insert %s!" % (item['user_id'], record_id))
             else:
                 print("User %d exist!" % item['user_id'])
+        return item
 
 import os
 from urllib.parse import urlparse
 
 from scrapy.pipelines.files import FilesPipeline
-from scrapy.exceptions import DropItem
 from urllib.parse import parse_qs, urlparse, urlencode, unquote, unquote_plus, quote, quote_plus
 
 
