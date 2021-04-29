@@ -11,7 +11,7 @@ class UsersSpider(scrapy.Spider):
         },
     }
     #start_urls = ['https://learnerhub.net/']
-    web_token = ''
+    web_token = 'eyJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoidXNlciIsInVzZXJfaWQiOjU3MTAsImV4cCI6MTYxMTMwNTA3NH0.Z5UotmTsmjHC6THmo81d8A6jg3swFPS1jT3mlJaz6qc'
     group_id = 189
 
 
