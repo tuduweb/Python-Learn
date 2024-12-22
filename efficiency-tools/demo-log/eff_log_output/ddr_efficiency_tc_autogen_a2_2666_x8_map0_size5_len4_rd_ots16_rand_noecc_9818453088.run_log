@@ -1,0 +1,350 @@
+=======================================================================================
+
+Interval Start Time                          : 190000.000000 ns                 ;  Interval End Time                            : 200000.000000 ns                 
+
+
+=======================================================================================
+
+Interval Start Time                          : 200000.000000 ns                 ;  Interval End Time                            : 210000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 106.510488 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 88.508908 ns                     
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 97.008885 ns                     
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 97.008885 ns                     
+
+=======================================================================================
+
+Interval Start Time                          : 210000.000000 ns                 ;  Interval End Time                            : 220000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 784.501066 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 102.000700 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 255.822355 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 255.822355 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 220000.000000 ns                 ;  Interval End Time                            : 230000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 837.000550 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 103.497174 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 254.999833 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 254.999833 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 230000.000000 ns                 ;  Interval End Time                            : 240000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 794.990698 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 105.005388 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 248.875650 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 248.875650 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 240000.000000 ns                 ;  Interval End Time                            : 250000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 784.504812 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 100.493386 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 256.324996 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 256.324996 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 250000.000000 ns                 ;  Interval End Time                            : 260000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 841.500650 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 104.993096 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 261.406935 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 261.406935 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 260000.000000 ns                 ;  Interval End Time                            : 270000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 762.006478 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 104.997162 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 254.105205 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 254.105205 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 270000.000000 ns                 ;  Interval End Time                            : 280000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 757.510808 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 100.496376 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 256.260510 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 256.260510 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 280000.000000 ns                 ;  Interval End Time                            : 290000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 770.996602 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 100.496304 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 238.569268 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 238.569268 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 290000.000000 ns                 ;  Interval End Time                            : 300000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 833.997584 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 101.998966 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 248.169123 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 248.169123 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 300000.000000 ns                 ;  Interval End Time                            : 310000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 774.007396 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 103.499200 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 257.477403 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 257.477403 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 310000.000000 ns                 ;  Interval End Time                            : 320000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 745.497622 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 101.989760 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 250.048992 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 250.048992 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 320000.000000 ns                 ;  Interval End Time                            : 330000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 839.998908 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 113.989756 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 248.872734 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 248.872734 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 330000.000000 ns                 ;  Interval End Time                            : 340000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 790.500720 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 104.998356 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 263.130318 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 263.130318 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 340000.000000 ns                 ;  Interval End Time                            : 350000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 787.503104 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 102.005290 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 253.041629 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 253.041629 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 350000.000000 ns                 ;  Interval End Time                            : 360000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 766.504860 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 107.997238 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 256.978245 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 256.978245 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 360000.000000 ns                 ;  Interval End Time                            : 370000.000000 ns                 
+
+Configured max read xact latency             : 1000000.000000 ns                ;  Observed max read xact latency               : 782.993968 ns                    
+Configured min read xact latency             : 1.000000 ns                      ;  Observed min read xact latency               : 103.504630 ns                    
+Configured avg_max read xact latency         : 1000000.000000 ns                ;  Observed avg_max read xact latency           : 252.769217 ns                    
+Configured avg_min read xact latency         : 1.000000 ns                      ;  Observed avg_min read xact latency           : 252.769217 ns                    
+
+=======================================================================================
+
+Interval Start Time                          : 370000.000000 ns                 ;  Interval End Time                            : 374112.000000 ns                 
+
+
+=======================================================================================
+
+UVM_INFO @ 374112.0000ns: reporter [cb_eff_dimm_mon_0] call dimm_monitor report_result task
+UVM_INFO @ 374112.0000ns: reporter [cb_eff_dimm_mon_0] diff_time_clk_q.size=77
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [ 0] diff_time=33470 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [ 1] diff_time=624 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [ 2] diff_time=6136 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [ 3] diff_time=6272 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [ 4] diff_time=6272 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [ 5] diff_time=6272 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [ 6] diff_time=6272 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [ 7] diff_time=1354 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [ 8] diff_time=67648 wr_cnt=8 rd_cnt=592 wr_eff=0.000473 rd_eff=0.035005 eff=0.035478
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [ 9] diff_time=40 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [10] diff_time=6264 wr_cnt=0 rd_cnt=675 wr_eff=0.000000 rd_eff=0.431034 eff=0.431034
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [11] diff_time=20 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [12] diff_time=6238 wr_cnt=0 rd_cnt=749 wr_eff=0.000000 rd_eff=0.480282 eff=0.480282
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [13] diff_time=16 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [14] diff_time=6270 wr_cnt=0 rd_cnt=687 wr_eff=0.000000 rd_eff=0.438278 eff=0.438278
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [15] diff_time=20 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [16] diff_time=6230 wr_cnt=0 rd_cnt=731 wr_eff=0.000000 rd_eff=0.469342 eff=0.469342
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [17] diff_time=26 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [18] diff_time=6264 wr_cnt=0 rd_cnt=726 wr_eff=0.000000 rd_eff=0.463602 eff=0.463602
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [19] diff_time=8 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [20] diff_time=6250 wr_cnt=0 rd_cnt=726 wr_eff=0.000000 rd_eff=0.464640 eff=0.464640
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [21] diff_time=16 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [22] diff_time=6280 wr_cnt=0 rd_cnt=710 wr_eff=0.000000 rd_eff=0.452229 eff=0.452229
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [23] diff_time=12 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [24] diff_time=6254 wr_cnt=0 rd_cnt=713 wr_eff=0.000000 rd_eff=0.456028 eff=0.456028
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [25] diff_time=14 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [26] diff_time=6258 wr_cnt=0 rd_cnt=735 wr_eff=0.000000 rd_eff=0.469799 eff=0.469799
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [27] diff_time=14 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [28] diff_time=6256 wr_cnt=0 rd_cnt=737 wr_eff=0.000000 rd_eff=0.471228 eff=0.471228
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [29] diff_time=24 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [30] diff_time=6218 wr_cnt=0 rd_cnt=724 wr_eff=0.000000 rd_eff=0.465745 eff=0.465745
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [31] diff_time=48 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [32] diff_time=6260 wr_cnt=0 rd_cnt=711 wr_eff=0.000000 rd_eff=0.454313 eff=0.454313
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [33] diff_time=12 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [34] diff_time=6254 wr_cnt=0 rd_cnt=708 wr_eff=0.000000 rd_eff=0.452830 eff=0.452830
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [35] diff_time=24 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [36] diff_time=6258 wr_cnt=0 rd_cnt=694 wr_eff=0.000000 rd_eff=0.443592 eff=0.443592
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [37] diff_time=12 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [38] diff_time=6268 wr_cnt=0 rd_cnt=753 wr_eff=0.000000 rd_eff=0.480536 eff=0.480536
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [39] diff_time=6 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [40] diff_time=6244 wr_cnt=0 rd_cnt=754 wr_eff=0.000000 rd_eff=0.483024 eff=0.483024
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [41] diff_time=24 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [42] diff_time=6242 wr_cnt=0 rd_cnt=753 wr_eff=0.000000 rd_eff=0.482538 eff=0.482538
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [43] diff_time=12 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [44] diff_time=6270 wr_cnt=0 rd_cnt=717 wr_eff=0.000000 rd_eff=0.457416 eff=0.457416
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [45] diff_time=6 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [46] diff_time=6266 wr_cnt=0 rd_cnt=730 wr_eff=0.000000 rd_eff=0.466007 eff=0.466007
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [47] diff_time=20 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [48] diff_time=6224 wr_cnt=0 rd_cnt=703 wr_eff=0.000000 rd_eff=0.451799 eff=0.451799
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [49] diff_time=28 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [50] diff_time=6270 wr_cnt=0 rd_cnt=699 wr_eff=0.000000 rd_eff=0.445933 eff=0.445933
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [51] diff_time=4 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [52] diff_time=6240 wr_cnt=0 rd_cnt=699 wr_eff=0.000000 rd_eff=0.448077 eff=0.448077
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [53] diff_time=24 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [54] diff_time=6254 wr_cnt=0 rd_cnt=756 wr_eff=0.000000 rd_eff=0.483531 eff=0.483531
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [55] diff_time=24 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [56] diff_time=6272 wr_cnt=0 rd_cnt=734 wr_eff=0.000000 rd_eff=0.468112 eff=0.468112
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [57] diff_time=18 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [58] diff_time=6240 wr_cnt=0 rd_cnt=743 wr_eff=0.000000 rd_eff=0.476282 eff=0.476282
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [59] diff_time=20 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [60] diff_time=6276 wr_cnt=0 rd_cnt=726 wr_eff=0.000000 rd_eff=0.462715 eff=0.462715
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [61] diff_time=10 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [62] diff_time=6246 wr_cnt=0 rd_cnt=706 wr_eff=0.000000 rd_eff=0.452129 eff=0.452129
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [63] diff_time=28 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [64] diff_time=6252 wr_cnt=0 rd_cnt=717 wr_eff=0.000000 rd_eff=0.458733 eff=0.458733
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [65] diff_time=4 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [66] diff_time=6252 wr_cnt=0 rd_cnt=697 wr_eff=0.000000 rd_eff=0.445937 eff=0.445937
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [67] diff_time=34 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [68] diff_time=6266 wr_cnt=0 rd_cnt=738 wr_eff=0.000000 rd_eff=0.471114 eff=0.471114
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [69] diff_time=4 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [70] diff_time=6256 wr_cnt=0 rd_cnt=698 wr_eff=0.000000 rd_eff=0.446292 eff=0.446292
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [71] diff_time=20 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [72] diff_time=6224 wr_cnt=0 rd_cnt=706 wr_eff=0.000000 rd_eff=0.453728 eff=0.453728
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [73] diff_time=24 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [74] diff_time=6278 wr_cnt=0 rd_cnt=713 wr_eff=0.000000 rd_eff=0.454285 eff=0.454285
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [75] diff_time=20 wr_cnt=0 rd_cnt=0 wr_eff=0.000000 rd_eff=0.000000 eff=0.000000
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] [76] diff_time=6208 wr_cnt=0 rd_cnt=294 wr_eff=0.000000 rd_eff=0.189433 eff=0.189433
+UVM_INFO @ 374112.0000ns: reporter [report_ddr_result] current max_eff=0.483531
+
+====================FLOW INFO====================
+===================================================
+write flow[Max    ]:[0.000000][GBps]
+write flow[Min    ]:[0.000000][GBps]
+write flow[Average]:[0.000000][GBps]
+read  flow[Max    ]:[4089.083607][GBps]
+read  flow[Min    ]:[3726.444596][GBps]
+read  flow[Average]:[4016.442311][GBps]
+wcmd  num          :[0][____]
+wdata num          :[0][____]
+rcmd  num          :[10000][____]
+===================================================
+UVM_INFO @ 374112.0000ns: uvm_test_top [ddr_efficiency] final_phase begin !!!
+UVM_INFO @ 374112.0000ns: uvm_test_top [ddr_efficiency] final_phase end !!!
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+Quit count :     1 of  1000
+** Report counts by severity
+UVM_INFO :2567085
+UVM_WARNING :    4
+UVM_ERROR :    1
+UVM_FATAL :    0
+** Report counts by id
+[]     2
+[DIMM CONFIGURATION]     1
+[RNTST]     1
+[TEST_DONE]     2
+[TPRGED]     1
+[UVMTOP]     1
+[axi_addr_convert] 10000
+[axi_ddr_addr_trans] 100000
+[axi_flow_statistic]   230
+[bt2ddr_eff[0]] 10000
+[bt2ddr_model]     1
+[bt2ddr_model_cfg]     3
+[build_ddr4_env]     1
+[build_phase]     2
+[ca_swap_cfg]    28
+[cb_eff_dimm_mon_0]     2
+[check_command_tdllk]    18
+[check_task]     1
+[config_db_fail]     2
+[create_cfg]     1
+[ddr_addr_trans_cfg]    60
+[ddr_axi_region_cfg]     5
+[ddr_efficiency]    42
+[ddr_env]   130
+[ddr_env_cfg]    16
+[ddr_rm] 80008
+[ddr_tzc_rm] 30009
+[display_checked_out_features]     3
+[dut_cfg]    29
+[dut_dfx_axi_counter_0]    15
+[ecc_update_data] 1144988
+[env]    34
+[env_apb_tools]   196
+[env_cfg]     5
+[env_delay_tool]     6
+[env_exec_tools]     3
+[generate_configuration]     2
+[hook]     1
+[import_ddr_cfg_from_catalog]    18
+[load_prop_vals]     2
+[load_timeset]    14
+[mtb_plus]     1
+[new]     6
+[plus_ddr]   217
+[plus_prefix_enum]     2
+[plus_prefix_int]    11
+[plus_tzc_lsw_ral]     1
+[randomize_tSTAOFF_ps]     1
+[report_ddr_result]    78
+[report_phase]     2
+[rm[0]] 1174988
+[rm_ddr_dfx_axi_counter_ch0]     1
+[rm_ddr_dfx_axi_counter_ch1]     1
+[sample_access_phase_signals]   363
+[sample_reset_signal]    18
+[start_performance_monitoring]     1
+[testsuite_ddrc_addrmap_config]    12
+[tzc_rm[0]] 10001
+[update_inner_addr]  4388
+[update_on_reset]    18
+[uvm_test_top]   296
+[yenp_cmd_interpreter]   796
+[yenp_cmd_interpreter_shutdown]     1
+[yenp_interface]     4
+$finish called from file "/home/tools/usr/tools/Synopsys/vcs/Q-2020.03-SP2-7/etc/uvm-1.1/base/uvm_root.svh", line 437.
+$finish at simulation time 374112.0000ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 374112000000 fs
+CPU Time:   1454.640 seconds;       Data structure size: 263.6Mb
+Fri Dec 20 16:32:28 2024
